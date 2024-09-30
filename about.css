@@ -16,7 +16,72 @@ h1 {
     margin: 20px 0;
     color: #c5c5c5;
 }
+.description{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    top: 3.5rem;
+    padding: 2rem;
 
+    align-items: center;
+    /* height: 50rem; */
+    color: #c5c5c5;
+    font-size: 20px;
+}
+.about1{
+    background-image: linear-gradient(to right, rgba(55, 18, 37, 0.872), rgba(15, 15, 15, 0.872));
+    padding: 20px;
+    height: 10rem;
+    width:60rem;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-decoration:underline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about2{
+    padding: 20px;
+    height: auto;
+    width:60rem;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, rgba(15, 15, 15,0.872), rgba(55, 18, 37,0.872));
+}
+.ques{
+    padding: 10px; 
+}
+.ans{
+    padding-bottom: 20px;
+}
+.about2 ul{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column; 
+}
+.reviews{
+    padding: 20px;
+    height: auto;
+    width:60rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(55, 18, 37, 0.872), rgba(15, 15, 15, 0.872));
+}
+.reviews div{
+    padding: 10px 20px 20px 40px;
+    text-decoration: underline;
+}
 .header {
     background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
     /* background-image: linear-gradient(to left,rgb(15, 15, 15), rgb(55, 18, 37)); */
@@ -27,11 +92,14 @@ h1 {
     z-index: 2;
     top: -20px;
     height: 4rem;
+    color: white;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
+.header span{
+    font-size: 40px;
+}
 .nav-links {
     display: flex;
     gap: 20px;
@@ -54,74 +122,6 @@ h1 {
     font-weight: bolder;
     text-decoration: underline;
     transition: transform 0.3s ease;
-}
-
-
-.movie-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    top: 2rem;
-    justify-content: space-between;
-    position: relative;
-    padding: 5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    bottom: 10rem;
-}
-
-.movie-card {
-    background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.865), rgba(55, 18, 37, 0.865));
-    padding: 1rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    text-align: center;
-    height: 24rem;
-    width: 15rem;
-}
-
-
-.movie-card:hover {
-    transform: scale(1.05);
-}
-
-.movie-card img {
-    max-width: 100%;
-    border-radius: 15px;
-    height: 15rem;
-    width: 13rem;
-}
-
-.movie-info {
-    margin-top: 15px;
-}
-
-.movie-info h3 {
-    margin: 5px;
-    color: #FF6B81;
-    font-size: 1.4rem;
-}
-
-.movie-info p {
-    font-size: 1rem;
-    color: #888;
-    margin: 5px
-}
-
-.watch-btn {
-    background-image: linear-gradient(to right, rgba(15, 15, 15, 0.865), rgba(55, 18, 37, 0.865));
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.watch-btn:hover {
-    background-color: #FF3D68;
 }
 
 footer {
@@ -153,7 +153,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.584);
 }
 
-a {
+a { 
     color: #ffffff;
     text-decoration: none;
 }
@@ -167,51 +167,81 @@ a {
     margin-left: 5px;
     transition: background-color 0.3s ease;
 }
-
+.margin{
+    margin:20px;
+}
+.fbf{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+height: auto;
+width: 90%;
+}
+.name-input{
+    width: 90%;
+    font-size:17px;
+    color: #c5c5c5;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
+}
+.subject-input{
+    width: 90%;
+    font-size:17px;
+    color: #c5c5c5;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
+}
+.sub-btn{
+font-size: 17px;
+margin: 25px;
+padding: 15px;
+border: 2px solid black;
+border-radius: 50px;
+background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
+color: #c5c5c5;
+text-decoration: none;
+width: 10rem;
+}
+.sub-btn:hover{
+    cursor:pointer; 
+}
+.email-input{
+    width: 90%;
+    font-size:17px;
+    color: #c5c5c5;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    padding: 15px;
+    background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
+    
+}
+.message-input{
+    width: 90%;
+    font-size:17px;
+    color: #c5c5c5;
+    border: 0px solid black;
+    border-radius: 50px;
+    padding: 20px;
+    height: 10rem;
+    display: flex;
+    background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
+    justify-content: baseline;
+    
+}
 @media screen and (max-width:1340px) {
-    .movie-grid {
-        display: grid;
-        grid-template-columns: 15rem 15rem 15rem;
-        gap: 20px;
-        top: 1rem;
-        justify-content: space-between;
-        position: relative;
-        padding: 5rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        bottom: 10rem;
-    }
+ 
 }
 
 @media screen and (max-width:1000px) {
-    .movie-grid {
-        display: grid;
-        grid-template-columns: 15rem 15rem;
-        gap: 20px;
-        top: 2.4rem;
-        justify-content: space-evenly;
-        position: relative;
-        padding: 5rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        bottom: 10rem;
-    }
+  
 }
 
 @media screen and (max-width:750px) {
-    .movie-grid {
-        display: grid;
-        grid-template-columns: 15rem;
-        gap: 20px;
-        align-items: center;
-        top: 8.4rem;
-        justify-content: space-evenly;
-        position: relative;
-        padding: 5rem;
-        max-width: 1200px;
-        margin: 0 auto;
-        bottom: 10rem;
-    }
+
 
     .header {
         background-image: linear-gradient(to right, rgba(15, 15, 15), rgba(55, 18, 37));
